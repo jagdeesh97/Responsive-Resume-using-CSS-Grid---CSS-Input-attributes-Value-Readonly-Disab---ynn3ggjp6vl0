@@ -8,13 +8,12 @@
 
 /* Write CSS code below */
 .main-content{
-    display: flex;
+    /* display: flex;
     /* align-items: center; */
-    justify-content: center;
+   /*  justify-content: center; */
     min-height: 1000px;
-    /* width: 90%;  */
-    width: 100%;
-    margin: 20px;
+    width: 90%; 
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 300px 700px;
 }
