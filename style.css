@@ -22,9 +22,13 @@
     background-color: lightcoral;
 }
 .right-section{
+    grid-area: 1/2/3/3;
+    grid-column: span 1 / span 2;
     background-color: lightcyan;
 }
 .left-content{
+    grid-area: 1/1/3/2;
+    grid-column: span 1;
     padding: 1rem;
 }
 .profile-image{
@@ -36,18 +40,19 @@
     border-color: 5px solid white;
 }
 .name{
-    color: white;
+    letter-spacing: 0.02px;
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
-    white-space: 0.02px;
     padding: 0.8rem;
+    text-transform: uppercase;
 }
 .designation{
     color: white;
     font-size: 1rem;
     text-align: center;
     padding-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 .description{
     color: white;
@@ -94,9 +99,17 @@ hr{
     padding: 0.5rem;
     letter-spacing: 1px;
 }
-@media(max-width:674px){
+@media screen and (max-width: 673px) {
     .main-content{
-        display: grid;
-        grid-template-columns: 1000px;
+        grid-template-columns: repeat(1, 1fr);
     }
+    .right-section {
+        grid-area: auto;
+    }
+  }
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
 }
