@@ -18,8 +18,13 @@
     display: grid;
     grid-template-columns: 300px 700px;
 }
-.left-section{
-    background-color: lightcoral;
+.left-section{ 
+    /* column-span: 300px; */
+    grid-area: 1/1/3/2;
+     grid-column: span 1;
+    background-color: lightslategrey;
+    height: 100%;
+
 }
 .right-section{
     grid-area: 1/2/3/3;
